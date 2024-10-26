@@ -1,0 +1,60 @@
+section {
+
+    width: 600px;
+    height: 200px;
+    margin: 40px;
+}
+
+section:nth-of-type(1) {
+    background: linear-gradient(to right,black,blue,yellow,green,red);
+}
+section:nth-of-type(2) {
+    background: repeating-linear-gradient(
+        blue 0 10%,
+        yellow 10% 20%,
+        red 20% 30%
+        );
+    }
+section:nth-of-type(3) {
+    width: 400px;
+    background: radial-gradient(ellipse,yellow,red,black);
+}
+section:nth-of-type(4) {
+    width: 400px;
+    background: radial-gradient(ellipse,yellow 55%,red 40%,black 75%);
+}
+section:nth-of-type(5) {
+    width: 400px;
+    background: radial-gradient(circle,yellow 65%,red 50%,black 90%);
+}
+section:nth-of-type(6) {
+    width: 400px;
+    background: radial-gradient(circle at 20% 50%,yellow 45%,red 30%,black 90%); 
+}
+section:nth-of-type(7) {
+
+    background: radial-gradient(circle,blue,red,yellow 85%); 
+}
+section:nth-of-type(8) {
+
+    background: radial-gradient(ellipse,blue 5%,red,yellow 65%); 
+}
+section:nth-of-type(9) {
+
+    background: radial-gradient(circle,blue 5%,red,yellow 105%); 
+}
+section:nth-of-type(10) {
+
+    background-image: repeating-radial-gradient(circle,rgb(249, 113, 136) 0 10%, red 10% 20%, brown 20% 30%); 
+    height: 400px;
+}
+section:nth-of-type(11) {
+
+    background: linear-gradient(to bottom right,rgb(5, 5, 44),blue);
+    height: 400px;
+}
+section:nth-of-type(12) {
+
+    background: repeating-conic-gradient(red 10%, yellow 20%,blue 30%);; 
+    height: 400px;
+}
