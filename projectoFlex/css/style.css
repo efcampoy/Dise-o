@@ -1,0 +1,352 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url("./assets/fonts/Poppins/Poppins-BoldItalic.ttf") format('truetype');
+}
+
+
+:root {
+    --color-primary: #F70759;
+    --color-secondary: #c2c2c2;
+    --color-hover:#D0044A;
+    --color-bg:#fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+/* CABECERA */
+
+header {
+
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+header > nav {
+    
+    width: 100%;
+}
+
+header > nav > ul {
+    
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    padding-right: 10%;
+}
+
+
+header > nav > ul > li:nth-of-type(1){
+    margin: auto;
+    margin-left: 10%;
+}
+
+header > nav > ul > li {
+
+    list-style: none;
+    text-align: center;
+    padding: 1rem;
+    
+    
+}
+
+header > nav > ul > li:hover {
+
+    background-color: var(--color-hover);
+}
+
+
+header > nav > ul > li > a {
+
+    text-decoration: none;
+    color: var(--color-bg);
+}
+
+/* CUERPO 1ª SECCION */
+
+.content {
+
+    padding: 0;
+    margin: 0;
+}
+
+.content__img {
+
+    position: relative; 
+    width: 1024px;  
+    height: 300px; 
+    margin-bottom: 150px;
+}
+
+.content > .content__img {
+
+    background-image: url("../assets/img/fondo.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 99vw;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.content__element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content__element > .content__title {
+
+    color: var(--color-bg);
+    font-size: 2rem;
+    text-align: center;
+}
+.content__element > .content__title::after {
+
+    white-space: pre;
+    content: " en español por todo el mundo";   
+}
+
+
+.content__element > .content__search {
+
+    text-align: center;
+    margin-top: 30px;
+}
+
+.content__element > .content__search > input {
+
+    height: 50px;
+    width: 40%;
+    border-radius: 25px;
+    margin: 0;
+    padding: 1rem;
+    
+}
+
+.content__element > .content__search > a {
+
+    text-decoration: none;
+    color: var(--color-bg);
+    background-color: var(--color-primary);
+    border-radius: 25px;
+    padding: 0.80rem;
+    margin: 0;
+    position: absolute;
+    transform: translate(-50%);
+}
+
+.content__element > .content__search > a:hover {
+    background-color: var(--color-hover);
+}
+
+
+/* CUERPO 2ª SECCION */
+
+
+.content > .content__destinos { 
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; 
+    gap: 40px;
+    padding-bottom: 150px;
+}
+
+.content > .content__destinos > .content__gallery {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+} 
+
+.content .content__title {
+    
+    font-size: 2.5rem;
+}
+
+
+.content img {
+    
+    width: 25%;
+}
+.content img:hover {
+    
+    box-shadow: 0px 0px 5px 0px #333333;
+}
+
+.content .content__vermas {
+    width: 15%;
+}
+
+.content .content__vermas > a{
+    
+    text-align: center;
+    text-decoration: none;
+    padding: 1.5rem;
+    border-radius: 30px;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    width: 100%;
+    display: inline-block;
+}
+
+.content .content__vermas > a:hover {
+    
+    background-color: var(--color-hover);
+}
+
+/* CUERPO 3ª SECCION (cards)  */
+
+.content > .content__destinos .content__cards {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 40px;
+
+}
+
+.content__card1 {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    width: 25%;
+
+}
+.content__card1:hover {
+
+    background-color: #333333;
+
+}
+
+
+.content__card1 img {
+
+    width: 380px;
+    height: 248px;
+}
+
+.content__card1 h3 {
+
+    color: var(--color-primary);
+    margin: 1.5rem;
+    font-size: 1.5rem;
+}
+.content__card1 h3::first-letter {
+
+    text-transform: uppercase;
+}
+
+.content__card__nota {
+
+    color: var(--color-primary);
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+} 
+
+
+.content__card__info {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.content__card__price {
+
+    text-align: right;
+    color: var(--color-primary);
+    position: relative;
+    padding-right: 40px;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.content__card__price::before {
+
+    content: "desde\A";
+    white-space: pre;
+    padding-right: 20px;
+    text-align: right; 
+    color: var(--color-secondary);
+}
+.content__card__price::after {
+
+    content: "€";
+    color: var(--color-primary);
+}
+
+.content__card__opiniones {
+
+    color: var(--color-secondary);
+    text-align: left;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.content > .content__destinos > .content__cards > .content__card1 img {
+
+    width: 100% !important;
+}
+
+/* footer */
+
+footer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #333333;
+    gap: 40px;
+    padding: 2rem;
+    color: var(--color-bg);
+}
+
+footer > .content__footer a {    
+
+    text-decoration: none;
+    color: var(--color-bg);
+    display: block;
+    padding: 1rem;
+
+}
+
+footer > .content__footer a:hover {    
+
+    color: var(--color-primary); 
+
+}
